@@ -1,0 +1,5 @@
+#BlueJ class context
+comment0.target=ShortCalculator
+comment1.params=op\ num1\ num2
+comment1.target=java.lang.Short\ perfOperation(char,\ short,\ short)
+numComments=2

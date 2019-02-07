@@ -1,17 +1,22 @@
- 
-
 
 public class NormalizeAngle {
-
-    public Integer normalizeValueUsingModulo(Integer angle){
-        return 0;
+    final int stdAngle = 360;
+    public Integer normalizeValueUsingModulo(Integer angle)
+    {
+        int result = angle % stdAngle;
+        return result;
     }
 
-    public Integer normalizeValueUsingFloorMod(Integer integer){
-        return 0;
+    public Integer normalizeValueUsingFloorMod(Integer integer)
+    {
+        int result = Math.floorMod(integer,stdAngle);
+        return result;
     }
 
-    public static void main(String[] args){
-
+    public static void main(String[] args)
+    {
+        NormalizeAngle angleObj = new NormalizeAngle();
+        angleObj.normalizeValueUsingModulo(500);
+        
     }
 }
